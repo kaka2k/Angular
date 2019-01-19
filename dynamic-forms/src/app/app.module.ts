@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    Materialmodule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
