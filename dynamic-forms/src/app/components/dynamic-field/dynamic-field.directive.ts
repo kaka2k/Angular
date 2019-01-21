@@ -21,7 +21,13 @@ import {
 
     @Directive({
       // tslint:disable-next-line:directive-selector
-      selector: '[dynamicField]'
+      selector: '[dynamicField]',
+      template: `
+      <form class="dynamic-form" [formGroup]="form" (submit)="onSubmit($event)">
+      <ng-container *ngFor="let field of fields;" dynamicField [field]="field" [group]="form">
+      </ng-container>
+      </form>
+      `
       })
       export class DynamicFieldDirective implements OnInit {
       @Input() field: FieldConfig;

@@ -11,6 +11,7 @@ import { DateComponent } from './components/date/date.component';
 import { RadiobuttonComponent } from './components/radiobutton/radiobutton.component';
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { DynamicFieldDirective } from './components/dynamic-field/dynamic-field.directive';
+import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DynamicFieldDirective } from './components/dynamic-field/dynamic-field.
     DateComponent,
     RadiobuttonComponent,
     CheckboxComponent,
-    DynamicFieldDirective
+    DynamicFieldDirective,
+    DynamicFormComponent
   ],
   imports: [
     BrowserModule,
